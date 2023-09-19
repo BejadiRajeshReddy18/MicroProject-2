@@ -71,8 +71,10 @@ input{
 }
 
 textarea {
-  width: 50%;
+  width: 55%;
   outline: none;
+  font-size: 21px;
+  font-weight: 400;
   border: none !important;
   margin-right: 100px;
   padding: 20px;
@@ -172,7 +174,6 @@ textarea {
 }
 
 .right{
-  position: relative;
   background-color: #fff;
   border-radius: 1rem;
   width: 100%;
@@ -180,6 +181,7 @@ textarea {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .right h3{
@@ -209,7 +211,8 @@ textarea {
   font-size: 1.2rem;
   border-radius: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .btn img{
@@ -226,17 +229,15 @@ textarea {
   width: 8vw;
 }
 
-.sticky{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 30vh;
-  right: 75px;
+.social{
+  position: sticky;
+  top: 15%;
+  margin-top: 25vh;
+  float: right;
 }
 
-.social{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  width: 5%;
+.social img{
+  height: 60px;
+  display: block;
+  width: fit-content;
 }
